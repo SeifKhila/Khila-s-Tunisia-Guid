@@ -1,0 +1,331 @@
+/* General page setup */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Rubik', "Neo Sans Arabic", Arial, sans-serif;
+    background-color: #f6fafd;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/shu-Tunisia-SidiBouSaid-760300645-1440x823.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navigation bar */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 32px;
+    font-size: 22px;
+    color: #fffbe7;
+    box-shadow: 0 2px 8px rgba(33, 118, 174, 0.08);
+}
+
+nav ul {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color:  #17406a;
+    text-shadow: 1px 1px 3px #17406a;
+    text-decoration: none;
+    transition: color 0.2s, font-size 0.2s;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 6px;
+}
+
+
+nav a:hover {
+    color: #ffb400;
+    background: rgba(255,255,255,0.08);
+    font-size: 24px;
+}
+
+/* Main content area */
+main {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: #17406a;
+    padding: 2rem 1rem 3rem 1rem;
+}
+.destiniations ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: center;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
+    list-style: none;
+}
+
+.destiniations li {
+    margin: 0;
+}
+
+.destiniations a {
+    display: inline-block;
+    background: #2176ae;
+    color: #fffbe7;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-weight: 500;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(33, 118, 174, 0.10);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.destiniations a:hover {
+    background: #ffb400;
+    color: #17406a;
+    transform: translateY(-3px) scale(1.05);
+}
+.destiniations p,
+main p {
+    background: rgba(255, 255, 255, 0.75);
+    color: #17406a;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    margin: 1.5rem auto;
+    max-width: 700px;
+    box-shadow: 0 2px 8px rgba(33, 118, 174, 0.08);
+    font-family: 'Rubik', "Neo Sans Arabic", Arial, sans-serif;
+    letter-spacing: 0.01em;
+}
+ .destiniations p:hover,
+main p:hover {
+    background:#ffb400;
+    box-shadow: 0 4px 16px rgba(33, 118, 174, 0.16);
+    transform: scale(1.02);
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+.discover-tunisia {
+    font-family: 'Pacifico', cursive, 'Rubik', "Neo Sans Arabic", Arial, sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #2176ae;
+    text-shadow: 2px 2px 8px #fffbe7, 0 2px 8px rgba(33, 118, 174, 0.10);
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.crew-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 2rem 0;
+}
+
+.crew-images div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 260px;           /* Increased from 160px */
+    background: rgba(255,255,255,0.85);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(33, 118, 174, 0.13);
+    padding: 1.5rem;            /* Slightly more padding */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.crew-images div:hover {
+    transform: translateY(-6px) scale(1.04);
+    box-shadow: 0 6px 24px rgba(33, 118, 174, 0.18);
+}
+
+.crew-images img {
+    width: 220px;               /* Increased from 110px or 150px */
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 12px rgba(33, 118, 174, 0.13);
+}
+
+.crew-images h3 {
+    font-size: 1.15rem;         /* Slightly larger font */
+    color: #2176ae;
+    text-align: center;
+    margin: 0;
+    font-family: 'Rubik', "Neo Sans Arabic", Arial, sans-serif;
+}
+.imgs h2 {
+    font-family: 'Pacifico', cursive, 'Rubik', "Neo Sans Arabic", Arial, sans-serif;
+    color: #2176ae;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 2px 8px #fffbe7, 0 2px 8px rgba(33, 118, 174, 0.10);
+    background: rgba(255,255,255,0.7);
+    border-radius: 12px;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(33, 118, 174, 0.10);
+}
+.imgs {
+    text-align: center;
+}
+
+.imgs h2 {
+    /* ...existing styles... */
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imgs h2:hover{
+color: #ffb400;
+    text-shadow: 1px 1px 3px #17406a;
+    background: rgba(255,255,255,0.08);
+    transform: scale(1.05);
+    transition: color 0.2s, background 0.2s, transform 0.2s;
+}
+
+.contact {
+    background: rgba(255,255,255,0.85);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(33, 118, 174, 0.10);
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: 'Pacifico', cursive, 'Rubik', "Neo Sans Arabic", Arial, sans-serif;
+    color: #2176ae;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    text-shadow: 1px 2px 8px #fffbe7, 0 2px 8px rgba(33, 118, 174, 0.10);
+}
+
+.contact p {
+    color: #17406a;
+    font-size: 1.1rem;
+    margin: 0.7rem 0;
+    font-family: 'Rubik', "Neo Sans Arabic", Arial, sans-serif;
+}
+
+.contact a {
+    color: #2176ae;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s;
+    border-bottom: 1px dotted #ffb400;
+}
+
+.contact a:hover {
+    color: #ffb400;
+    border-bottom: 1px solid #2176ae;
+}
+footer {
+    width: 100%;
+    background: rgba(33, 118, 174, 0.95); /* Deep blue, slightly transparent */
+    color: #fffbe7;
+    text-align: center;
+    padding: 1.2rem 0 1rem 0;
+    font-family: 'Rubik', "Neo Sans Arabic", Arial, sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 12px rgba(33, 118, 174, 0.10);
+    margin-top: 2rem;
+    border-radius: 16px 16px 0 0;
+}
+
+footer a {
+    color: #ffb400;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: #fffbe7;
+    text-decoration: underline;
+}
+@media (max-width: 900px) {
+    .crew-images {
+        gap: 1rem;
+    }
+    .crew-images div {
+        max-width: 180px;
+        padding: 1rem;
+    }
+    .crew-images img {
+        width: 130px;
+        height: 130px;
+    }
+    .discover-tunisia {
+        font-size: 2rem;
+    }
+    .imgs h2 {
+        font-size: 1.5rem;
+        padding: 0.4rem 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 8px;
+        font-size: 18px;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        padding-left: 0;
+    }
+    main {
+        padding: 1rem 0.2rem 2rem 0.2rem;
+    }
+    .destiniations ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .crew-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    .crew-images div {
+        max-width: 95vw;
+        width: 100%;
+        padding: 0.7rem;
+    }
+    .crew-images img {
+        width: 90vw;
+        max-width: 220px;
+        height: auto;
+    }
+    .discover-tunisia {
+        font-size: 1.3rem;
+    }
+    .imgs h2 {
+        font-size: 1.1rem;
+        padding: 0.3rem 0.7rem;
+    }
+    footer {
+        font-size: 0.95rem;
+        padding: 0.7rem 0;
+    }
+}
